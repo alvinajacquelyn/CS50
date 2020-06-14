@@ -1,0 +1,17 @@
+argc is the integer variable which denotes the number of arguments given ,
+where as the argv[ ] is the array of the strings which signify the various arguments strings.
+
+Consider an Example -
+Suppose after compiling the code ,we give the input via command line .
+
+Just after the compilation we typed
+./a.out 19 23 34 45
+Then in that case - argc = 5 (no of strings including the ./a.out)
+argv[0] = “./a.out”
+argv[1] = “19” /* It is not a integer but a string*/
+argv[2] = “23”
+argv[3] = “34”
+argv[4] = “45”
+
+Generally we have to take the inputs as integers , so to convert the string input to integer is we use a function called atoi .
+To use the atoi function we include the library stdlib.h (#include stdlib.h)
