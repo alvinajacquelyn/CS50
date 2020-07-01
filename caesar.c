@@ -28,7 +28,7 @@ int main(int argc, string argv[])
         }
     }
 
-    printf("ciphertext: %s" , plain);
+    printf("ciphertext:git  %s" , plain);
     printf("\n");
     return 0;
 
