@@ -1,0 +1,50 @@
+Assuming you're using Github, 1st create a new repository. I've named mine "forCS50"
+
+https://github.com/dipanzan/forCS50.git
+
+After that inside your CS50 terminal, type:
+
+$ git init
+Inside the folder for the files that you want to push to Github. In my case I created a file called hello.c inside ~/github:
+
+~/ $ mkdir github
+~/ $ cd github
+~/github/ $ touch hello.c
+~/github/ $ ls
+hello.c 
+~/github/ $ git init
+Initialized empty Git repository in /home/ubuntu/github/.git/
+Then type this line to add the remote repository you just created, in my case it's "forCS50"
+
+~/github/ (master) $ git remote add origin https://github.com/dipanzan/forCS50.git
+After that, type these two lines:
+
+$ git config --global user.email "you@example.com"
+$ git config --global user.name "Your Name"
+Substituting your "you@example.com" with your email address and your Github username.
+
+And then you're pretty much done, all is left is to add the file and commit:
+
+~/github/ (master) $ git add hello.c
+~/github/ (master) $ git commit -m "Added hello.c"
+[master (root-commit) 4657104] Added hello.c
+ 1 file changed, 8 insertions(+)
+ create mode 100644 hello.c
+You can check the status using:
+
+~/github/ (master) $ git status
+On branch master
+nothing to commit, working tree clean
+
+Last step is to push the file to Github (your remote repository you just created). It'll ask your for your email address and password, so provide that as prompted and git push:
+
+~/github/ (master) $ git push -u origin master
+Counting objects: 3, done.
+Delta compression using up to 16 threads.
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 288 bytes | 288.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0)
+To https://github.com/dipanzan/forCS50.git
+ * [new branch]      master -> master
+Branch 'master' set up to track remote branch 'master' from 'origin'.
+
