@@ -25,6 +25,8 @@ int main(void)
     //main part of bubble sorting
     for ( i=count-2 ; i>=0 ; i--)
     {
+        //i = 2 first, then j <=2 since last sort is j = 2 and j=2+!
+        // i = 1 nxt since j<=1 as the last number will already be the biggest
         for(int j=0 ; j<= i ; j++)
         {
             if (number[j] > number[j+1])
