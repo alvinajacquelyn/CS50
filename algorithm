@@ -19,7 +19,7 @@ we have a similar set of the most common big Ω running times:
 
 
 O(n2)
-    bubble sort
+    bubble sort, selection sort
 O(n log n)
 O(n)
     linear search
@@ -27,3 +27,14 @@ O(log n)
     binary search
 O(1)
 And Ω for bubble sort is still n2, since we still check each pair of elements for n – 1 passes.
+
+
+// We can go back to bubble sort and change its algorithm to be something like this, which will allow us to stop early if all the elements are sorted:
+// Repeat until no swaps
+//     For i from 0 to n–2
+//         If i'th and i+1'th elements out of order
+//             Swap them
+// Now, we only need to look at each element once, so the best case is now Ω(n)
+// A modified bubble sort includes a flag that is set if an exchange is made after an entire pass over the array. If no exchange is made, then it should be clear that the array is already in order because no two elements need to be switched. In that case, the sort should end.
+        //flag is just another variable, since C didn’t have bool or other similar types, expressions normally result to 0 or 1, as false or true. Therefore integer types were used to simulate boolean behaviour.
+        //This is just a generalisation, the use of a similarly named variable maybe used as a boolean (for preventing infinite loops or checking conditions) or some problems may require it used as an integer.
