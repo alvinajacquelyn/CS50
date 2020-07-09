@@ -1,0 +1,29 @@
+The more formal way to describe this is with big O notation, which we can think of as “on the order of”.
+For example, if our algorithm is linear search, it will take approximately O(n) steps, “on the order of n”.
+In fact, even an algorithm that looks at two items at a time and takes n/2 steps has O(n).
+This is because, as n gets bigger and bigger, only the largest term, n, matters.
+Similarly, a logarithmic running time is O(log n), no matter what the base is, since this is just an approximation of what happens with n is very large.
+
+Computer scientists might also use big Ω, big Omega notation, which is the lower bound of number of steps for our algorithm.
+(Big O is the upper bound of number of steps, or the worst case, and typically what we care about more.)
+With linear search, for example, the worst case is n steps, but the best case is 1 step since our item might happen to be the first item we check.
+The best case for binary search, too, is 1 since our item might be in the middle of the array.
+we have a similar set of the most common big Ω running times:
+Ω(n2)
+Ω(n log n)
+Ω(n)
+    (counting the number of items)
+Ω(log n)
+Ω(1)
+    (linear search, binary search)
+
+
+O(n2)
+    bubble sort
+O(n log n)
+O(n)
+    linear search
+O(log n)
+    binary search
+O(1)
+And Ω for bubble sort is still n2, since we still check each pair of elements for n – 1 passes.
