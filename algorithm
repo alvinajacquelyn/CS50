@@ -11,6 +11,7 @@ The best case for binary search, too, is 1 since our item might be in the middle
 we have a similar set of the most common big Ω running times:
 Ω(n2)
 Ω(n log n)
+    merge sort
 Ω(n)
     (counting the number of items)
 Ω(log n)
@@ -21,6 +22,7 @@ we have a similar set of the most common big Ω running times:
 O(n2)
     bubble sort, selection sort
 O(n log n)
+    merge sort
 O(n)
     linear search
 O(log n)
@@ -38,3 +40,4 @@ And Ω for bubble sort is still n2, since we still check each pair of elements f
 // A modified bubble sort includes a flag that is set if an exchange is made after an entire pass over the array. If no exchange is made, then it should be clear that the array is already in order because no two elements need to be switched. In that case, the sort should end.
         //flag is just another variable, since C didn’t have bool or other similar types, expressions normally result to 0 or 1, as false or true. Therefore integer types were used to simulate boolean behaviour.
         //This is just a generalisation, the use of a similarly named variable maybe used as a boolean (for preventing infinite loops or checking conditions) or some problems may require it used as an integer.
+
