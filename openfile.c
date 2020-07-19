@@ -24,6 +24,6 @@ int main(void)
 //  pointer is a variable that stores the address of another variable.
 //  Unlike other variables that hold values of a certain type, pointer holds the address of a variable
 //  Pointer Syntax : data_type *var_name; Example : int *p;  char *p;
-//  * is used to denote that “p” is pointer variable and not a normal variable
+//  * is used to denote that “p” is pointer variable and not a normal variable, The * Operator is also known as Value at address operator.
 //  & operator is also known as “Address of” Operator.
 
