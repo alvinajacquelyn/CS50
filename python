@@ -1,0 +1,84 @@
+while test_expression:
+    Body of while
+In the while loop, test expression is checked first. 
+The body of the loop is entered only if the test_expression evaluates to True.
+After one iteration, the test expression is checked again. 
+This process continues until the test_expression evaluates to False
+
+i = 3
+while i > 0:
+    print("cough")
+    i -= 1
+    
+-
+
+# Program to find the sum of all numbers stored in a list
+
+# List of numbers
+numbers = [6, 5, 3, 8, 4, 2, 5, 4, 11]
+
+# variable to store the sum
+sum = 0
+
+# iterate over the list
+for val in numbers:
+	sum = sum+val
+
+print("The sum is", sum)
+	
+-
+
+range(10) will generate numbers from 0 to 9 (10 numbers).
+We can also define the start, stop and step size as range(start, stop,step_size). 
+step_size defaults to 1 if not provided.
+
+-
+
+We can use the range() function in for loops to iterate through a sequence of numbers. It can be combined with the len() function to iterate through a sequence using indexing. Here is an example.
+
+# Program to iterate through a list using indexing
+
+genre = ['pop', 'rock', 'jazz']
+
+# iterate over the list using index
+for i in range(len(genre)):
+	print("I like", genre[i])
+	
+-
+
+If the break statement is inside a nested loop (loop inside another loop), the break statement will terminate the innermost loop.
+
+# Use of break statement inside the loop
+
+for val in "string":
+    if val == "i":
+        break
+    print(val)
+
+print("The end")
+Output:
+s
+t
+r
+The end
+
+-
+
+continue statement is used to skip the rest of the code inside a loop for the current iteration only. Loop does not terminate but continues on with the next iteration.
+
+# Program to show the use of continue statement inside loops
+
+for val in "string":
+    if val == "i":
+        continue
+    print(val)
+
+print("The end")
+Output:
+s
+t
+r
+n
+g
+The end
+
