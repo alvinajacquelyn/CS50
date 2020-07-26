@@ -1,0 +1,22 @@
+., for any character
+.*, for 0 or more characters
+.+, for 1 or more characters
+?, for something optional
+^, for start of input
+$, for end of input
+
+
+import re
+from cs50 import get_string
+
+s = get_string("Do you agree?\n")
+
+if re.search("^y(es)?$", s, re.IGNORECASE):
+    print("Agreed.")
+elif re.search("^no?$", s, re.IGNORECASE):
+    print("Not agreed.")
+
+First, we need the re package, or library, for regular expressions.
+Then, for y or yes, we have the regular expression ^y(es)?$. We want to make sure that the string starts with y, and optionally has es immediately after the y, and then ends.
+Similarly, for n and no, we want our string to start, have the letter n, and optionally the letter o next, and then end. The regular expression for that would be ^no?$.
+We pass in another argument, re.IGNORECASE, to ignore the casing of the letters in the string.
